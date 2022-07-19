@@ -202,13 +202,16 @@ h2 {
     color: #000;
     text-decoration: none;
 
+    .fa-solid {
+        display: none;
+    }
+
     &_on {
-        color: #9c47fc;
+        color: transparent;
         display: block;
         background: -webkit-linear-gradient(#9356dc, #ff79da);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        display: none;
 
     }
 

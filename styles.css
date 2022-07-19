@@ -18,7 +18,6 @@ h2 {
   background-color: #fff;
   box-shadow: 0 3px 5px #cecece;
 }
-
 .logo img {
   width: 60%;
   padding: 5% 20%;
@@ -33,7 +32,6 @@ h2 {
   color: #000;
   cursor: pointer;
 }
-
 .location_txt {
   margin-left: 15px;
   font-weight: 500;
@@ -44,13 +42,11 @@ h2 {
   text-align: center;
   padding: 1px 40px 40px 40px;
 }
-
 .slogan_title {
   font-size: 25px;
   font-weight: 800;
   margin-bottom: 5px;
 }
-
 .slogan_txt {
   font-size: 15px;
   font-weight: 400;
@@ -67,7 +63,6 @@ h2 {
   font-weight: 500;
   cursor: pointer;
 }
-
 .btn:hover {
   filter: opacity(0.8);
 }
@@ -81,15 +76,12 @@ h2 {
   box-shadow: 0 5px 10px #cecece;
   cursor: pointer;
 }
-
 .fonctionnement_step:hover {
   background-color: #f5edff;
 }
-
 .fonctionnement_step:hover .fonctionnement_step_icons_fas {
   color: #9356dc;
 }
-
 .fonctionnement_step_icons {
   display: flex;
   justify-content: space-between;
@@ -98,7 +90,6 @@ h2 {
   margin-right: 15px;
   width: 20%;
 }
-
 .fonctionnement_step_icons_num {
   background-color: #9356dc;
   color: #fff;
@@ -107,12 +98,10 @@ h2 {
   border-radius: 30px;
   text-align: center;
 }
-
 .fonctionnement_step_icons_fas {
   font-size: 20px;
   color: #7e7e7e;
 }
-
 .fonctionnement_step_txt {
   width: 80%;
   line-height: 75px;
@@ -122,11 +111,9 @@ h2 {
 .restaurants {
   background-color: #f6f6f6;
 }
-
 .restaurants h2 {
   width: 80%;
 }
-
 .restaurants_content {
   display: flex;
   justify-content: center;
@@ -143,7 +130,6 @@ h2 {
   border-radius: 15px;
   cursor: pointer;
 }
-
 .card_image {
   height: 175px;
   position: relative;
@@ -151,15 +137,13 @@ h2 {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-
 .card_image img {
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
   display: block;
 }
-
 .card_body {
   display: flex;
   justify-content: space-between;
@@ -167,17 +151,14 @@ h2 {
   margin-top: 0;
   padding: 0 15px;
 }
-
 .card_body h3 {
   font-weight: 800;
   margin-top: 10px;
   margin-bottom: 0;
 }
-
 .card_body p {
   margin-top: 5px;
 }
-
 .card:hover {
   box-shadow: 0 5px 10px #ac92cc;
 }
@@ -199,21 +180,20 @@ h2 {
   color: #000;
   text-decoration: none;
 }
-
+.fav .fa-solid {
+  display: none;
+}
 .fav_on {
-  color: #9c47fc;
+  color: transparent;
   display: block;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: none;
 }
-
 .fav:hover .fav_off {
   display: none;
 }
-
 .fav:hover .fav_on {
   display: inline;
 }
@@ -228,22 +208,18 @@ footer {
   width: 100px;
   filter: invert(100%);
 }
-
 .foot_list {
   padding: 0;
   list-style: none;
   font-size: 15px;
 }
-
 .foot_list li {
   padding: 5px 0;
 }
-
 .foot_list li a {
   text-decoration: none;
   color: #fff;
 }
-
 .foot_list i {
   width: 25px;
   font-size: 13px;
@@ -251,6 +227,4 @@ footer {
 
 footer {
   padding: 25px;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
