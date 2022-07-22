@@ -17,10 +17,14 @@ h2 {
 .logo {
   background-color: #fff;
   box-shadow: 0 3px 5px #cecece;
+  display: flex;
+  justify-content: center;
+  max-height: 150px;
 }
 .logo img {
   width: 60%;
-  padding: 5% 20%;
+  padding: 5% 0%;
+  max-width: 300px;
 }
 
 .location {
@@ -202,6 +206,7 @@ footer {
   height: 200px;
   background-color: #353535;
   color: #fff;
+  padding: 25px;
 }
 
 .foot_logo {
@@ -225,6 +230,166 @@ footer {
   font-size: 13px;
 }
 
-footer {
-  padding: 25px;
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  h2 {
+    font-size: 40px;
+  }
+  .location {
+    height: 100px;
+    font-size: 30px;
+  }
+  .slogan_title {
+    font-size: 40px;
+  }
+  .slogan_txt {
+    font-size: 20px;
+  }
+  .btn {
+    height: 100px;
+    font-size: 25px;
+    border-radius: 50px;
+  }
+  .fonctionnement_step {
+    height: 150px;
+    font-size: 30px;
+    margin: 40px;
+  }
+  .fonctionnement_step_icons {
+    margin-left: -25px;
+    margin-right: 25px;
+  }
+  .fonctionnement_step_icons_num {
+    width: 40px;
+  }
+  .fonctionnement_step_icons_fas {
+    font-size: 30px;
+  }
+  .fonctionnement_step_txt {
+    line-height: 150px;
+  }
+  .card {
+    height: 500px;
+  }
+  .card_image {
+    height: 400px;
+  }
+  .card_body {
+    margin-top: 5px;
+  }
+  .card_body h3 {
+    font-size: 30px;
+  }
+  .card_body p {
+    font-size: 20px;
+  }
+  .foot_logo {
+    width: 200px;
+  }
+  .foot_list {
+    font-size: 20px;
+  }
+  .foot_list i {
+    width: 30px;
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  h2 {
+    font-size: 40px;
+    margin: 0;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 100%;
+  }
+  .logo img {
+    padding: 50px 0;
+  }
+  .location {
+    width: 50%;
+    height: 100px;
+    font-size: 30px;
+  }
+  .slogan_title {
+    font-size: 40px;
+  }
+  .slogan_txt {
+    font-size: 20px;
+  }
+  .btn {
+    height: 100px;
+    font-size: 25px;
+    border-radius: 50px;
+  }
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fonctionnement_step {
+    width: 900px;
+    height: 150px;
+    font-size: 30px;
+    margin: 40px;
+  }
+  .fonctionnement_step_icons {
+    margin-left: -25px;
+    margin-right: 25px;
+  }
+  .fonctionnement_step_icons_num {
+    width: 40px;
+  }
+  .fonctionnement_step_icons_fas {
+    font-size: 30px;
+  }
+  .fonctionnement_step_txt {
+    line-height: 150px;
+  }
+  .restaurants {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .restaurants_content {
+    max-width: 930px;
+  }
+  .restaurants h2 {
+    width: auto;
+    margin: 50px;
+  }
+  .card {
+    height: 300px;
+    width: 400px;
+    margin: 30px;
+  }
+  .card_image {
+    height: 200px;
+  }
+  .card_body h3 {
+    font-size: 30px;
+  }
+  .card_body p {
+    font-size: 20px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .foot_logo {
+    width: 200px;
+  }
+  .foot_list {
+    font-size: 20px;
+  }
+  .foot_list i {
+    width: 30px;
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=styles.css.map */
