@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content:="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bc4fad6d34.js" crossorigin="anonymous"></script>
     <title>Accueil - Ohmyfood!</title>
 </head>
@@ -77,8 +78,10 @@
         <div class="circle"></div>
     </div>
     <header>
-        <div class="logo">
+        <div class="logo logo_accueil">
+            <a href="/index.html" class="back"><i class="fa-solid fa-arrow-left"></i></a>
             <img src="images/logo/ohmyfood.png" alt="Logo OhMyFood!">
+            <div class="right"></div>
         </div>
         <div class="location">
             <label for=""><i class="fas fa-map-marker-alt"></i></label>
@@ -132,80 +135,90 @@
         <section class="restaurants">
             <h2>Restaurants</h2>
             <div class="restaurants_content">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gôut">
-                        <div class="sticker_nouveau">Nouveau</div>
-                    </div>
-                    <div class="card_body">
-                        <div class="card_body_title">
-                            <h3>La palette du gôut</h3>
-                            <p>Ménilmontant</p>
+                <a href="/restaurant_1.html">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                alt="La palette du gôut">
+                            <div class="sticker_nouveau">Nouveau</div>
                         </div>
-                        <div class="card_body_fav">
-                            <a href="#" class="fav">
-                                <i class="fa-regular fa-heart fav_off"></i>
-                                <i class="fa-solid fa-heart fav_on"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_image">
-                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-                        <div class="sticker_nouveau">Nouveau</div>
-                    </div>
-                    <div class="card_body">
-                        <div class="card_body_title">
-                            <h3>La note enchantée</h3>
-                            <p>Charonne</p>
-                        </div>
-                        <div class="card_body_fav">
-                            <a href="#" class="fav">
-                                <i class="fa-regular fa-heart fav_off"></i>
-                                <i class="fa-solid fa-heart fav_on"></i>
-                            </a>
+                        <div class="card_body">
+                            <div class="card_body_title">
+                                <h3>La palette du gôut</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="card_body_fav">
+                                <a href="#" class="fav">
+                                    <i class="fa-regular fa-heart fav_off"></i>
+                                    <i class="fa-solid fa-heart fav_on"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                </a>
+                <a href="/restaurant_2.html">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                            <div class="sticker_nouveau">Nouveau</div>
+                        </div>
+                        <div class="card_body">
+                            <div class="card_body_title">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="card_body_fav">
+                                <a href="#" class="fav">
+                                    <i class="fa-regular fa-heart fav_off"></i>
+                                    <i class="fa-solid fa-heart fav_on"></i>
+                                </a>
+                            </div>
+                        </div>
 
-                </div>
-                <div class="card">
-                    <div class="card_image">
-                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
                     </div>
-                    <div class="card_body">
-                        <div class="card_body_title">
-                            <h3>À la française</h3>
-                            <p>Cité Rouge</p>
+                </a>
+                <a href="/restaurant_3.html">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
                         </div>
-                        <div class="card_body_fav">
-                            <a href="#" class="fav">
-                                <i class="fa-regular fa-heart fav_off"></i>
-                                <i class="fa-solid fa-heart fav_on"></i>
-                            </a>
+                        <div class="card_body">
+                            <div class="card_body_title">
+                                <h3>À la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div class="card_body_fav">
+                                <a href="#" class="fav">
+                                    <i class="fa-regular fa-heart fav_off"></i>
+                                    <i class="fa-solid fa-heart fav_on"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
-                <div class="card">
-                    <div class="card_image">
-                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                            alt="Le délice des sens">
                     </div>
-                    <div class="card_body">
-                        <div class="card_body_title">
-                            <h3>Le délice des sens</h3>
-                            <p>Folie-Méricourt</p>
+                </a>
+                <a href="/restaurant_4.html">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="Le délice des sens">
                         </div>
-                        <div class="card_body_fav">
-                            <a href="#" class="fav">
-                                <i class="fa-regular fa-heart fav_off"></i>
-                                <i class="fa-solid fa-heart fav_on"></i>
-                            </a>
+                        <div class="card_body">
+                            <div class="card_body_title">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div class="card_body_fav">
+                                <a href="#" class="fav">
+                                    <i class="fa-regular fa-heart fav_off"></i>
+                                    <i class="fa-solid fa-heart fav_on"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
+                </a>
+
             </div>
         </section>
     </main>
