@@ -271,6 +271,28 @@ h2 {
         align-items: center;
         margin-top: 0;
         padding: 0 15px;
+        position: relative;
+
+        &_fav {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            -moz-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+
+            &:hover {
+                .fav_on {
+                    opacity: 1;
+                }
+
+                .fav_off {
+                    opacity: 0;
+                }
+            }
+        }
 
         h3 {
             font-weight: 800;
@@ -302,28 +324,43 @@ h2 {
 
 .fav {
     font-size: 25px;
-    color: #000;
-    text-decoration: none;
+    margin: 0 25px 20px 0;
+    position: relative;
 
-    .fa-solid {
-        display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #000;
+        display: block;
     }
 
-    &_on {
-        color: transparent;
-        display: block;
-        background: -webkit-linear-gradient($color-1, $color-2);
+    .fav_off {
+        transition: opacity 0.5s, transform 1s;
+    }
+
+    .fav_on {
+        background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
         background-clip: text;
         -webkit-text-fill-color: transparent;
-
+        transition: opacity 0.5s, transform 1s;
+        opacity: 0;
     }
 
-    &:hover &_off {
-        display: none;
+}
+
+@keyframes fav-transition {
+    from {
+        background-color: #fff;
     }
 
-    &:hover &_on {
-        display: inline;
+    to {
+        background-color: violet;
     }
 }
 
@@ -530,6 +567,11 @@ footer {
         }
     }
 
+    .fav {
+        font-size: 40px;
+        margin: 0 40px 40px 0;
+    }
+
     .foot {
         &_logo {
             width: 200px;
@@ -655,6 +697,11 @@ footer {
                 font-size: 20px;
             }
         }
+    }
+
+    .fav {
+        font-size: 40px;
+        margin: 0 40px 40px 0;
     }
 
     footer {

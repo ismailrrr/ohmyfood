@@ -539,6 +539,22 @@ h2 {
   align-items: center;
   margin-top: 0;
   padding: 0 15px;
+  position: relative;
+}
+.card_body_fav {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card_body_fav:hover .fav_on {
+  opacity: 1;
+}
+.card_body_fav:hover .fav_off {
+  opacity: 0;
 }
 .card_body h3 {
   font-weight: 800;
@@ -566,27 +582,48 @@ h2 {
 
 .fav {
   font-size: 25px;
+  margin: 0 25px 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fav i {
+  position: absolute;
+  top: 0;
+  left: 0;
   color: #000;
-  text-decoration: none;
-}
-.fav .fa-solid {
-  display: none;
-}
-.fav_on {
-  color: transparent;
   display: block;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+}
+.fav .fav_off {
+  transition: opacity 0.5s, transform 1s;
+}
+.fav .fav_on {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.fav:hover .fav_off {
-  display: none;
-}
-.fav:hover .fav_on {
-  display: inline;
+  transition: opacity 0.5s, transform 1s;
+  opacity: 0;
 }
 
+@-webkit-keyframes fav-transition {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: violet;
+  }
+}
+
+@keyframes fav-transition {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: violet;
+  }
+}
 .title {
   position: relative;
   z-index: 2;
@@ -754,6 +791,10 @@ footer {
   .card_body p {
     font-size: 20px;
   }
+  .fav {
+    font-size: 40px;
+    margin: 0 40px 40px 0;
+  }
   .foot_logo {
     width: 200px;
   }
@@ -848,6 +889,10 @@ footer {
   }
   .card_body p {
     font-size: 20px;
+  }
+  .fav {
+    font-size: 40px;
+    margin: 0 40px 40px 0;
   }
   footer {
     display: flex;
