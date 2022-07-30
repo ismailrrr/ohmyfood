@@ -607,23 +607,6 @@ h2 {
   opacity: 0;
 }
 
-@-webkit-keyframes fav-transition {
-  from {
-    background-color: #fff;
-  }
-  to {
-    background-color: violet;
-  }
-}
-
-@keyframes fav-transition {
-  from {
-    background-color: #fff;
-  }
-  to {
-    background-color: violet;
-  }
-}
 .title {
   position: relative;
   z-index: 2;

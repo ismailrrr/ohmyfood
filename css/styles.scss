@@ -3,22 +3,23 @@ body {
     font-family: Roboto;
 }
 
+// Couleur fournies dans le brief créatif
 $color-1: #9356DC;
 $color-2: #FF79DA;
 $color-3: #99E2D0;
 
-
+// Loader spinner
 .loading {
-    z-index: 3;
+    z-index: 3; // Pour que le spinner soit visible sur toute la page
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba($color: #fff, $alpha: 0.999);
+    background-color: rgba($color: #fff, $alpha: 0.999); // Fond blanc légerement transparent du spinner
     position: fixed;
     height: 100vh;
     inset: 0;
     opacity: 0.95;
-    animation: loaded 3s;
+    animation: loaded 3s; // Durée avant disparition du loader
     animation-fill-mode: forwards;
 }
 
@@ -55,10 +56,14 @@ $color-3: #99E2D0;
 
 @keyframes loaded {
 
+    // Fait disparaitre le loader 
     to {
         visibility: hidden;
     }
 }
+
+
+//  Header
 
 header {
     background-color: #eaeaea;
@@ -136,6 +141,9 @@ h2 {
     }
 }
 
+
+//  Main
+
 .slogan {
     background-color: #f6f6f6;
     text-align: center;
@@ -157,7 +165,7 @@ h2 {
 .btn {
     height: 50px;
     padding: 10px 20px;
-    background: linear-gradient(175deg, $color-2, $color-1);
+    background: linear-gradient(175deg, $color-2, $color-1); // Dégradé du rose au violet sur le bouton
     border-radius: 30px;
     border: none;
     color: #fff;
@@ -165,9 +173,11 @@ h2 {
     cursor: pointer;
 
     &:hover {
-        filter: opacity(0.8);
+        filter: opacity(0.8); // Léger éclaircissement au survol
     }
 }
+
+// Fonctionnement
 
 .fonctionnement {
     &_step {
@@ -180,10 +190,10 @@ h2 {
         cursor: pointer;
 
         &:hover {
-            background-color: #f5edff;
+            background-color: #f5edff; // Changement de couleur du fond au survol
 
             .fonctionnement_step_icons_fas {
-                color: $color-1;
+                color: $color-1; // Changement de couleur de l'icône au survol
             }
         }
 
@@ -191,7 +201,7 @@ h2 {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-left: -15px;
+            margin-left: -15px; // Marge négative pour avoir le numéro au bord de la div
             margin-right: 15px;
             width: 20%;
 
@@ -219,6 +229,8 @@ h2 {
         }
     }
 }
+
+//  Restaurants
 
 .restaurants {
     background-color: #f6f6f6;
@@ -281,7 +293,7 @@ h2 {
             color: rgb(0, 0, 0);
             cursor: pointer;
             -moz-transition: all 0.3s ease;
-            transition: all 0.3s ease;
+            transition: all 0.3s ease; // Transition pour le changement d'icône au survol
 
             &:hover {
                 .fav_on {
@@ -354,15 +366,7 @@ h2 {
 
 }
 
-@keyframes fav-transition {
-    from {
-        background-color: #fff;
-    }
-
-    to {
-        background-color: violet;
-    }
-}
+//  Page Restaurant
 
 .title {
     position: relative;
@@ -463,6 +467,8 @@ h2 {
     padding: 10px 40px;
 }
 
+//  Footer
+
 footer {
     height: 200px;
     background-color: #353535;
@@ -497,6 +503,12 @@ footer {
         }
     }
 }
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 @media only screen and (min-width: 700px) and (max-width: 1000px) {
     h2 {
