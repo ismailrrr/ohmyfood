@@ -446,6 +446,7 @@ h2 {
   color: #fff;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .btn:hover {
   filter: opacity(0.8);
@@ -517,6 +518,7 @@ h2 {
   box-shadow: 0 5px 10px #eaeaea;
   border-radius: 15px;
   cursor: pointer;
+  transition: all 1s ease;
 }
 .card_image {
   height: 175px;

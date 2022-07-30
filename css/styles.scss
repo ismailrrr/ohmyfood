@@ -172,6 +172,8 @@ h2 {
     font-weight: 500;
     cursor: pointer;
 
+    transition: all 0.3s ease;
+
     &:hover {
         filter: opacity(0.8); // Léger éclaircissement au survol
     }
@@ -316,6 +318,8 @@ h2 {
             margin-top: 5px;
         }
     }
+
+    transition: all 1s ease;
 
     &:hover {
         box-shadow: 0 5px 10px #ac92cc;
