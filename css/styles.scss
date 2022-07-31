@@ -387,6 +387,7 @@ h2 {
     &_txt {
         h1 {
             font-size: 25px;
+            font-weight: 100;
             font-family: 'Shrikhand', cursive;
         }
     }
@@ -519,6 +520,20 @@ footer {
         font-size: 40px;
     }
 
+    .header_restaurant_image {
+        height: 450px;
+    }
+
+    .title {
+        padding: 20px 5% 0 5%;
+
+        &_txt {
+            h1 {
+                font-size: 40px;
+            }
+        }
+    }
+
     .location {
         height: 100px;
         font-size: 30px;
@@ -588,6 +603,37 @@ footer {
         margin: 0 40px 40px 0;
     }
 
+    .menu_group {
+        &_title {
+            h2 {
+                font-size: 30px;
+            }
+
+            &_underline {
+                height: 4px;
+                width: 80px;
+            }
+        }
+
+        &_list {
+            &_item {
+                &_txt {
+                    h3 {
+                        font-size: 30px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
+                }
+
+                &_price {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
     .foot {
         &_logo {
             width: 200px;
@@ -609,7 +655,20 @@ footer {
     h2 {
         font-size: 40px;
         margin: 0;
+    }
 
+    .header_restaurant_image {
+        height: 450px;
+    }
+
+    .title {
+        padding: 20px 5% 0 5%;
+
+        &_txt {
+            h1 {
+                font-size: 40px;
+            }
+        }
     }
 
     header {
@@ -718,6 +777,37 @@ footer {
     .fav {
         font-size: 40px;
         margin: 0 40px 40px 0;
+    }
+
+    .menu_group {
+        &_title {
+            h2 {
+                font-size: 30px;
+            }
+
+            &_underline {
+                height: 4px;
+                width: 80px;
+            }
+        }
+
+        &_list {
+            &_item {
+                &_txt {
+                    h3 {
+                        font-size: 30px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
+                }
+
+                &_price {
+                    font-size: 25px;
+                }
+            }
+        }
     }
 
     footer {

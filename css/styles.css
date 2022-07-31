@@ -623,6 +623,7 @@ h2 {
 }
 .title_txt h1 {
   font-size: 25px;
+  font-weight: 100;
   font-family: "Shrikhand", cursive;
 }
 
@@ -728,6 +729,15 @@ footer {
   h2 {
     font-size: 40px;
   }
+  .header_restaurant_image {
+    height: 450px;
+  }
+  .title {
+    padding: 20px 5% 0 5%;
+  }
+  .title_txt h1 {
+    font-size: 40px;
+  }
   .location {
     height: 100px;
     font-size: 30px;
@@ -780,6 +790,22 @@ footer {
     font-size: 40px;
     margin: 0 40px 40px 0;
   }
+  .menu_group_title h2 {
+    font-size: 30px;
+  }
+  .menu_group_title_underline {
+    height: 4px;
+    width: 80px;
+  }
+  .menu_group_list_item_txt h3 {
+    font-size: 30px;
+  }
+  .menu_group_list_item_txt p {
+    font-size: 20px;
+  }
+  .menu_group_list_item_price {
+    font-size: 25px;
+  }
   .foot_logo {
     width: 200px;
   }
@@ -795,6 +821,15 @@ footer {
   h2 {
     font-size: 40px;
     margin: 0;
+  }
+  .header_restaurant_image {
+    height: 450px;
+  }
+  .title {
+    padding: 20px 5% 0 5%;
+  }
+  .title_txt h1 {
+    font-size: 40px;
   }
   header {
     display: flex;
@@ -878,6 +913,22 @@ footer {
   .fav {
     font-size: 40px;
     margin: 0 40px 40px 0;
+  }
+  .menu_group_title h2 {
+    font-size: 30px;
+  }
+  .menu_group_title_underline {
+    height: 4px;
+    width: 80px;
+  }
+  .menu_group_list_item_txt h3 {
+    font-size: 30px;
+  }
+  .menu_group_list_item_txt p {
+    font-size: 20px;
+  }
+  .menu_group_list_item_price {
+    font-size: 25px;
   }
   footer {
     display: flex;
