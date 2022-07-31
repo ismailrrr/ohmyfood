@@ -25,8 +25,8 @@ $color-3: #99E2D0;
 
 .circle {
     $circle-count: 60;
-    $circle-diameter: 0.5em;
-    $ring-radius: 4em;
+    $circle-diameter: 20px;
+    $ring-radius: 200px;
     $duration: 1s;
     position: absolute;
     width: $circle-diameter;
