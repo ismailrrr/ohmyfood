@@ -601,7 +601,7 @@ h2 {
   transition: opacity 0.5s, transform 1s;
 }
 .fav .fav_on {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -661,12 +661,25 @@ h2 {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  position: relative;
   width: 90%;
   background-color: rgb(255, 255, 255);
   margin-bottom: 20px;
   box-shadow: 0 5px 10px #eaeaea;
   border-radius: 15px;
   max-width: 630px;
+  overflow: hidden;
+}
+.menu_group_list_item:hover .menu_group_list_item_price {
+  -webkit-animation: slide-in-price 500ms forwards;
+          animation: slide-in-price 500ms forwards;
+}
+.menu_group_list_item:hover .menu_group_list_item_check {
+  -webkit-animation: slide-in-check 500ms forwards;
+          animation: slide-in-check 500ms forwards;
+}
+.menu_group_list_item:hover .fa-circle-check {
+  transform: rotate(270deg);
 }
 .menu_group_list_item_txt {
   width: 80%;
@@ -684,8 +697,101 @@ h2 {
 .menu_group_list_item_price {
   padding: 0 20px 10px 0;
   font-weight: 600;
+  position: absolute;
+  right: 0;
+  -webkit-animation: slide-out-price 300ms forwards;
+          animation: slide-out-price 300ms forwards;
+}
+.menu_group_list_item_check {
+  font-size: 25px;
+  position: absolute;
+  right: -60px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 100%;
+  background-color: #99e2d0;
+  -webkit-animation: slide-out-check 300ms forwards;
+          animation: slide-out-check 300ms forwards;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  text-orientation: sideways;
 }
 
+.fa-circle-check {
+  transition: transform 500ms 200ms;
+}
+
+@-webkit-keyframes slide-in-check {
+  from {
+    right: -60px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes slide-in-check {
+  from {
+    right: -60px;
+  }
+  to {
+    right: 0;
+  }
+}
+@-webkit-keyframes slide-out-check {
+  from {
+    right: 0;
+  }
+  to {
+    right: -60px;
+  }
+}
+@keyframes slide-out-check {
+  from {
+    right: 0;
+  }
+  to {
+    right: -60px;
+  }
+}
+@-webkit-keyframes slide-in-price {
+  from {
+    right: 0;
+  }
+  to {
+    right: 60px;
+  }
+}
+@keyframes slide-in-price {
+  from {
+    right: 0;
+  }
+  to {
+    right: 60px;
+  }
+}
+@-webkit-keyframes slide-out-price {
+  from {
+    right: 60px;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes slide-out-price {
+  from {
+    right: 60px;
+  }
+  to {
+    right: 0;
+  }
+}
 .btn_restaurant {
   background-color: #f6f6f6;
   display: flex;

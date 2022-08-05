@@ -361,7 +361,7 @@ h2 {
     }
 
     .fav_on {
-        background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+        background: -webkit-gradient(linear, left top, left bottom, from($color-1), to($color-2));
         background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: opacity 0.5s, transform 1s;
@@ -430,12 +430,28 @@ h2 {
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
+            position: relative;
             width: 90%;
             background-color: rgb(255, 255, 255);
             margin-bottom: 20px;
             box-shadow: 0 5px 10px #eaeaea;
             border-radius: 15px;
             max-width: 630px;
+            overflow: hidden;
+
+            &:hover {
+                .menu_group_list_item_price {
+                    animation: slide-in-price 500ms forwards;
+                }
+
+                .menu_group_list_item_check {
+                    animation: slide-in-check 500ms forwards;
+                }
+
+                .fa-circle-check {
+                    transform: rotate(270deg);
+                }
+            }
 
             &_txt {
                 width: 80%;
@@ -456,8 +472,74 @@ h2 {
             &_price {
                 padding: 0 20px 10px 0;
                 font-weight: 600;
+                position: absolute;
+                right: 0;
+                animation: slide-out-price 300ms forwards;
+            }
+
+            &_check {
+                font-size: 25px;
+                position: absolute;
+                right: -60px;
+                border-bottom-right-radius: 15px;
+                border-top-right-radius: 15px;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 100%;
+                background-color: #99e2d0;
+                animation: slide-out-check 300ms forwards;
+                writing-mode: vertical-rl;
+                text-orientation: sideways;
             }
         }
+    }
+}
+
+.fa-circle-check {
+    transition: transform 500ms 200ms;
+}
+
+@keyframes slide-in-check {
+    from {
+        right: -60px;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes slide-out-check {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: -60px;
+    }
+}
+
+@keyframes slide-in-price {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: 60px;
+    }
+}
+
+@keyframes slide-out-price {
+    from {
+        right: 60px;
+    }
+
+    to {
+        right: 0;
     }
 }
 
