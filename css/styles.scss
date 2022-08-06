@@ -439,7 +439,19 @@ h2 {
             max-width: 630px;
             overflow: hidden;
 
-            &:hover {
+            &:hover,
+            &:active {
+                .menu_group_list_item_txt {
+                    width: calc(80% - 60px);
+
+                    h3,
+                    p {
+                        text-overflow: unset;
+                        overflow: unset;
+                        white-space: unset;
+                    }
+                }
+
                 .menu_group_list_item_price {
                     animation: slide-in-price 500ms forwards;
                 }
@@ -459,6 +471,9 @@ h2 {
 
                 h3 {
                     margin: 5px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
                 }
 
                 p {

@@ -670,15 +670,25 @@ h2 {
   max-width: 630px;
   overflow: hidden;
 }
-.menu_group_list_item:hover .menu_group_list_item_price {
+.menu_group_list_item:hover .menu_group_list_item_txt, .menu_group_list_item:active .menu_group_list_item_txt {
+  width: calc(80% - 60px);
+}
+.menu_group_list_item:hover .menu_group_list_item_txt h3,
+.menu_group_list_item:hover .menu_group_list_item_txt p, .menu_group_list_item:active .menu_group_list_item_txt h3,
+.menu_group_list_item:active .menu_group_list_item_txt p {
+  text-overflow: unset;
+  overflow: unset;
+  white-space: unset;
+}
+.menu_group_list_item:hover .menu_group_list_item_price, .menu_group_list_item:active .menu_group_list_item_price {
   -webkit-animation: slide-in-price 500ms forwards;
           animation: slide-in-price 500ms forwards;
 }
-.menu_group_list_item:hover .menu_group_list_item_check {
+.menu_group_list_item:hover .menu_group_list_item_check, .menu_group_list_item:active .menu_group_list_item_check {
   -webkit-animation: slide-in-check 500ms forwards;
           animation: slide-in-check 500ms forwards;
 }
-.menu_group_list_item:hover .fa-circle-check {
+.menu_group_list_item:hover .fa-circle-check, .menu_group_list_item:active .fa-circle-check {
   transform: rotate(270deg);
 }
 .menu_group_list_item_txt {
@@ -687,6 +697,9 @@ h2 {
 }
 .menu_group_list_item_txt h3 {
   margin: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu_group_list_item_txt p {
   margin: 5px;
