@@ -438,6 +438,19 @@ h2 {
             border-radius: 15px;
             max-width: 630px;
             overflow: hidden;
+            opacity: 0;
+
+            &:nth-child(1) {
+                animation: fade-in 500ms forwards 200ms;
+            }
+
+            &:nth-child(2) {
+                animation: fade-in 500ms forwards 550ms;
+            }
+
+            &:nth-child(3) {
+                animation: fade-in 500ms forwards 800ms;
+            }
 
             &:hover,
             &:active {
@@ -555,6 +568,19 @@ h2 {
 
     to {
         right: 0;
+    }
+}
+
+
+@keyframes fade-in {
+    from {
+        top: 10px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
     }
 }
 
