@@ -7,6 +7,8 @@ body {
 $color-1: #9356DC;
 $color-2: #FF79DA;
 $color-3: #99E2D0;
+$white: #fff;
+$black: #000;
 
 // Loader spinner
 .loading {
@@ -14,7 +16,7 @@ $color-3: #99E2D0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba($color: #fff, $alpha: 0.999); // Fond blanc légerement transparent du spinner
+    background-color: rgba($color: $white, $alpha: 0.999); // Fond blanc légerement transparent du spinner
     position: fixed;
     height: 100vh;
     inset: 0;
@@ -100,7 +102,7 @@ h2 {
 }
 
 .logo {
-    background-color: #fff;
+    background-color: $white;
     box-shadow: 0 3px 5px #cecece;
     display: flex;
     justify-content: space-between;
@@ -116,7 +118,7 @@ h2 {
 
     &_accueil {
         a {
-            color: #fff;
+            color: $white;
         }
     }
 }
@@ -132,7 +134,7 @@ h2 {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #000;
+    color: $black;
     cursor: pointer;
 
     &_txt {
@@ -168,7 +170,7 @@ h2 {
     background: linear-gradient(175deg, $color-2, $color-1); // Dégradé du rose au violet sur le bouton
     border-radius: 30px;
     border: none;
-    color: #fff;
+    color: $white;
     font-weight: 500;
     cursor: pointer;
 
@@ -209,7 +211,7 @@ h2 {
 
             &_num {
                 background-color: $color-1;
-                color: #fff;
+                color: $white;
                 width: 20px;
                 padding: 5px;
                 border-radius: 30px;
@@ -258,7 +260,7 @@ h2 {
     margin-bottom: 30px;
     height: 250px;
     width: 90%;
-    background-color: #fff;
+    background-color: $white;
     box-shadow: 0 5px 10px #eaeaea;
     border-radius: 15px;
     cursor: pointer;
@@ -352,7 +354,7 @@ h2 {
         position: absolute;
         top: 0;
         left: 0;
-        color: #000;
+        color: $black;
         display: block;
     }
 
@@ -484,9 +486,6 @@ h2 {
 
                 h3 {
                     margin: 5px;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                    white-space: nowrap;
                 }
 
                 p {
@@ -511,7 +510,7 @@ h2 {
                 right: -60px;
                 border-bottom-right-radius: 15px;
                 border-top-right-radius: 15px;
-                color: #fff;
+                color: $white;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -600,7 +599,7 @@ h2 {
 footer {
     height: 200px;
     background-color: #353535;
-    color: #fff;
+    color: $white;
     padding: 25px;
 }
 
@@ -621,7 +620,7 @@ footer {
 
             a {
                 text-decoration: none;
-                color: #fff;
+                color: $white;
             }
         }
 
@@ -862,7 +861,7 @@ footer {
     }
 
     .restaurants {
-        background-color: #fff;
+        background-color: $white;
         display: flex;
         flex-direction: column;
         align-items: center;

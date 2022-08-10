@@ -710,9 +710,6 @@ h2 {
 }
 .menu_group_list_item_txt h3 {
   margin: 5px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .menu_group_list_item_txt p {
   margin: 5px;
