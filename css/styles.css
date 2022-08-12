@@ -672,8 +672,8 @@ h2 {
   opacity: 0;
 }
 .menu_group_list_item:nth-child(1) {
-  -webkit-animation: fade-in 500ms forwards 200ms;
-          animation: fade-in 500ms forwards 200ms;
+  -webkit-animation: fade-in 500ms forwards 300ms;
+          animation: fade-in 500ms forwards 300ms;
 }
 .menu_group_list_item:nth-child(2) {
   -webkit-animation: fade-in 500ms forwards 550ms;
@@ -682,6 +682,10 @@ h2 {
 .menu_group_list_item:nth-child(3) {
   -webkit-animation: fade-in 500ms forwards 800ms;
           animation: fade-in 500ms forwards 800ms;
+}
+.menu_group_list_item:nth-child(4) {
+  -webkit-animation: fade-in 500ms forwards 1050ms;
+          animation: fade-in 500ms forwards 1050ms;
 }
 .menu_group_list_item:hover .menu_group_list_item_txt, .menu_group_list_item:active .menu_group_list_item_txt {
   width: calc(80% - 60px);
