@@ -690,12 +690,10 @@ h2 {
 .menu_group_list_item:hover .menu_group_list_item_txt, .menu_group_list_item:active .menu_group_list_item_txt {
   width: calc(80% - 60px);
 }
-.menu_group_list_item:hover .menu_group_list_item_txt h3,
-.menu_group_list_item:hover .menu_group_list_item_txt p, .menu_group_list_item:active .menu_group_list_item_txt h3,
-.menu_group_list_item:active .menu_group_list_item_txt p {
-  text-overflow: unset;
-  overflow: unset;
-  white-space: unset;
+.menu_group_list_item:hover .menu_group_list_item_txt h3, .menu_group_list_item:active .menu_group_list_item_txt h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu_group_list_item:hover .menu_group_list_item_price, .menu_group_list_item:active .menu_group_list_item_price {
   -webkit-animation: slide-in-price 500ms forwards;
@@ -712,9 +710,7 @@ h2 {
   width: 80%;
   padding: 5px;
 }
-.menu_group_list_item_txt h3 {
-  margin: 5px;
-}
+.menu_group_list_item_txt h3,
 .menu_group_list_item_txt p {
   margin: 5px;
   text-overflow: ellipsis;

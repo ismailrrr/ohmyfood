@@ -463,11 +463,10 @@ h2 {
                 .menu_group_list_item_txt {
                     width: calc(80% - 60px);
 
-                    h3,
-                    p {
-                        text-overflow: unset;
-                        overflow: unset;
-                        white-space: unset;
+                    h3 {
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
                     }
                 }
 
@@ -488,10 +487,7 @@ h2 {
                 width: 80%;
                 padding: 5px;
 
-                h3 {
-                    margin: 5px;
-                }
-
+                h3,
                 p {
                     margin: 5px;
                     text-overflow: ellipsis;
